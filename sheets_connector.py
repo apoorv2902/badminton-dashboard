@@ -14,7 +14,8 @@ def connect_to_sheets(secret_section_name: str, sheet_name: str):
     gc = gspread.authorize(creds)
 
     # Use Sheet ID from secrets
-    sheet = gc.open_by_key(st.secrets["sheet_id"]).worksheet(sheet_name)
+    sheet_id = credentials_dict["sheet_id"]  
+    sheet = gc.open_by_key(sheet_id).worksheet(sheet_name)
 
     return sheet
 
