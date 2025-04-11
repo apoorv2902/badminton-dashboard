@@ -1,8 +1,10 @@
 import streamlit as st
-import pandas as pd
-import os
+from sheets_connector import connect_to_sheets, append_score
 
 st.set_page_config(page_title="🏁 Enter Score", layout="centered")
+
+# Connect to Google Sheets
+sheet = connect_to_sheets("gcred.json", "game_data")  
 
 # Password Protection
 st.title("🔐 Score Entry (Restricted)")
@@ -22,23 +24,9 @@ if password == "purustar":
             if not all([day, game, a_score, d_score]):
                 st.warning("Please fill all fields.")
             else:
-                new_data = pd.DataFrame([{
-                    "Day": f"Day {day}",
-                    "Game": f"Game {game}",
-                    "A_score": a_score,
-                    "D_score": d_score
-                }])
-                
-                filepath = "data/game_data.csv"
-                if os.path.exists(filepath):
-                    df = pd.read_csv(filepath)
-                    df = pd.concat([df, new_data], ignore_index=True)
-                else:
-                    df = new_data
-
-                df.to_csv(filepath, index=False)
-                st.success("Score successfully added!")
+                row = [f"Day {day}", f"Game {game}", a_score, d_score]
+                append_score(sheet, row)
+                st.success("✅ Score successfully added to Google Sheets!")
 
 else:
     st.warning("Enter password to view the score entry form.")
-

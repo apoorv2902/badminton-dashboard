@@ -55,7 +55,13 @@ def set_dynamic_plot_style():
 bg_color, text_color = set_dynamic_plot_style()
 
 # Load the data
-df = pd.read_csv("data/game_data.csv")
+from sheets_connector import connect_to_sheets, get_scores_df
+
+# Connect to Google Sheet
+sheet = connect_to_sheets("gcred.json", "game_data")
+
+# Fetch the data
+df = get_scores_df(sheet)
 
 # Clean scores
 def to_score(val):

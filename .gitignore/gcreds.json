@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "badminton-app-456509",
+  "private_key_id": "857637eccb6df3de39b507c323e3a83033513615",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+oVRBpfWK8DLa\nG8+TPCWLvxx3UtmWJvpK2sAOEHi8rA+kCslaqJXcWUcJ31kINNuNuNKLHeCOclsy\nvmY9xkyL8iT7l7KPppmR9jr9fjoFbciqNWwkziCQrwUFg5lnmXzo+Q2WLVxXLHrw\nwkznHkWjCHmort+MSFWXgVaw3wAf7kXoRPKR5hv/PdUZVI3mvpMzjlnqTNnJYyOK\nGBsH1EBPG8Oa4QbVWedhvQ8Q+bON7SAOFlqQ4Nhaf8u3TA7Spkv+sMWH+/9mJUOC\nrPU1ZVXXlKi7y5dv46Wt502tGcNwjk8JYUbjLrAox1EOSX2SnQhGelUKIk4jby8O\nsYtt3l85AgMBAAECggEASlDAdRtKvxBm8qp24LJI/NLTOR1eX+/wEXB4AMOhHgSB\n0HS4DJS+X3mafRnKLq3Ujcpoof1SxpWEQiMB3sFIpCIREtgPr3rGUaXJV3t3CRjE\nar6K20pUXbMtZPnpuv6WOIinKE2kuwNHJkbJDiy5/xXVv9H0qk6kt3yfnDJDbS6d\nOm/JXZejIy7hjqtaEGhCvOtK+MVECGITp0qQ8lj+MmyznUkZcseikbXXSZF55DR0\nLMuWLnGDU07+0vokxs+Pm3/TBOgfuu8O97XObizJm185yaH6vxxizyCO5FZbuPg3\nhAwjr3RAjaxPj81AGkHWYAT91o6n0nxETGpE/lsklQKBgQDnbikwDFNIno/6oSCF\nXLSHMZ/zPfwh6IZZCkuS2e6Mw4R3YOF+tWe8VkZxKpqZI/pw5n2xUEcyEUjM8H1D\n3+Pm2qS22kSZozgb2hZpqnmoCGiaryQ3LgS2ThfAFxfxVilKkwyVfTdRswJ20DJF\nSOOE5Mtn2lSX2J1I0m5qIINGCwKBgQDS3kxCKYpICCcOtUac7/BiY0juuTf4j4yk\nFsmdHzLW7n0yA7PvDRFJYbsp0xXfaNUSR5erXcLncATYD0rh54srvvD8/Gv4ixPF\n2JNv/3sL9xpyvc8fE5jqlu/Y4xQBn98Bbv1aBK7f3lvSJ8ISOiJbEpyzndZ8Wv3C\nRuXR8qTOSwKBgBwEbBwTAeoiuA+BfixnArvzOAf8kw+P1OPmqSuIEqcb7Gd/ZQ0v\n7PUSBMkifUDY6DLO1JyouVXIXeXhn2ieLDsAcTxpxDBNYDeO+XOlXcEH85H2bg34\nFj3zylBI+28OHUWX88gNNqs/Xqb/oXZd0p1+DVnvRppzcOcmApP6h6ntAoGBAMNB\nvqFhL7+FdQ0khG9bql6giu8qqQ5LdjKXOzd3pS7qhRkj3qCTnBc0HQgcgtttiic0\nDdhLqOd/jay3dGJ8ch0e4K2R2zS5K6T+539EtZ6dwGrRIZIoJmfLPeq6UlMyw1/j\nc0vAnGGF18ZgtE8Gb7ufH2Ue2XYrF2CnH7XplfvDAoGAZF2A+PnnX9vCDDYXx1qw\nlJO3xhh2art55a7S4Ky8kOJ05oeMMqWhtUpAvZZuFApyrVD3ywmVvAY3Wn0Unuku\nIgVIVbHhx4AJMSJOm0gD+bft/nnMyvFEYImPvQCtxKUxTwfYsYecN8UA4sdtNLcX\nOU6EELLic9uU6BlRRuDG2dI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "streamlit-access-bot@badminton-app-456509.iam.gserviceaccount.com",
+  "client_id": "100367541995443684795",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/streamlit-access-bot%40badminton-app-456509.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
