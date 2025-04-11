@@ -7,8 +7,8 @@ def connect_to_sheets(secret_section_name: str, sheet_name: str):
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 
     # Load credentials from secrets
-    credentials_dict = json.loads(st.secrets[secret_section_name])
-    creds = ServiceAccountCredentials.from_service_account_info(dict(st.secrets["gcp_service_account"]))
+    credentials_dict = st.secrets.secret_section_name
+    creds = ServiceAccountCredentials.from_service_account_info(credentials_dict)
 
     # Authorize and connect
     client = gspread.authorize(creds)

@@ -60,7 +60,7 @@ from sheets_connector import connect_to_sheets, get_scores_df
 # Connect to Google Sheet
 try:
     sheet = connect_to_sheets("gcp_service_account", "game_data")
-    df = get_scores_df(sheet)  # Only run this if connection succeeded
+    df = get_scores_df(sheet)  
 except Exception as e:
     st.error(f"❌ Could not connect to Google Sheets: {e}")
     st.stop()
