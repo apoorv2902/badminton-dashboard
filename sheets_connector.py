@@ -1,22 +1,20 @@
 import streamlit as st
 import gspread
 import json
-from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
 
 def connect_to_sheets(secret_section_name: str, sheet_name: str):
-    scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+    # Get credentials from secrets
+    credentials_dict = json.loads(st.secrets[secret_section_name].to_json())
 
-    # Load credentials from secrets
-    credentials_dict = st.secrets.secret_section_name
-    creds = ServiceAccountCredentials.from_service_account_info(credentials_dict)
+    # Authenticate with gspread using dict
+    gc = gspread.service_account_from_dict(credentials_dict)
 
-    # Authorize and connect
-    client = gspread.authorize(creds)
-    sheet = client.open(sheet_name).sheet1
+    # Open the sheet
+    SHEET_ID = st.secrets["sheet_id"]
+    sheet = gc.open_by_key(SHEET_ID).worksheet(sheet_name)
 
     return sheet
-
-
 
 def get_scores_df(sheet):
     data = sheet.get_all_records()
