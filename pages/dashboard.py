@@ -58,7 +58,7 @@ bg_color, text_color = set_dynamic_plot_style()
 from sheets_connector import connect_to_sheets, get_scores_df
 
 # Connect to Google Sheet
-sheet = connect_to_sheets("gcred.json", "game_data")
+sheet = connect_to_sheets("gcp_service_account", "game_data")
 
 # Fetch the data
 df = get_scores_df(sheet)
