@@ -4,7 +4,7 @@ from sheets_connector import connect_to_sheets, append_score
 st.set_page_config(page_title="🏁 Enter Score", layout="centered")
 
 # Connect to Google Sheets
-sheet = connect_to_sheets("gcred.json", "game_data")  
+sheet = connect_to_sheets("gcp_service_account", "game_data")  
 
 # Password Protection
 st.title("🔐 Score Entry (Restricted)")
